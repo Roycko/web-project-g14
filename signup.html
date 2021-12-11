@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- title -->
+	<title>Matamim</title>
+
+	<!-- Matamin Icon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/capcake.png">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- special fonts and icons -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/Menu.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<script src="assets/js/login.js"> </script>
+    <script src="assets/js/signup_velidation.js"> </script>
+</head>
+<!-- login popup -->
+<div class="popup">
+	<div class="popup-content">
+		<a class="close" href="" onclick="close_login();return false;"><i class="fas fa-window-close"  ></i></a>
+		<h3>Login</h3>
+		<input type="text" placeholder="User Name">
+		<input type="text" placeholder="Password">
+		<a href="#" class="login" >Login</a>
+		<p>Need an account? <a href="signup.html" class="href"> sign-up here</a> <p> 
+	</div>
+</div>
+<body>
+	
+	<!--PreLoader-->
+	<!--	<div class="loader">
+          <div class="loader-inner">
+                <div class="circle"></div>
+            </div>
+        </div>-->
+        <!--PreLoader Ends-->
+	
+	<!-- header -->
+		<!-- login screen -->
+
+	<div class="top-header-area" id="sticker">
+		
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-lg-5 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="home.html">
+								<img src="assets/img/logo3.png" alt="" >
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li ><a href="home.html"><i class="fas fa-home"></i></a>
+								</li>
+								<li><a href="About.html">Our Story</a></li>
+								<li><a href="#">Events</a>
+									<ul class="sub-menu">
+										<li><a href="">Catering</a></li>
+										<li><a href="">Private Events</a></li>
+										<li><a href="">Business Events</a></li>
+										<li><a href="">Parties</a></li>
+									</ul>
+								</li>
+								<li class=""><a href="Menu.html">Shop</a>
+								</li>
+								<li><a href="">Contact</a></li>
+								<li>
+									<div class="header-icons">
+										<a class="" href=""><i class="fas fa-shopping-cart"></i></a>
+										<!-- need to put in the mobile as well!!!!  -->
+										 
+										<a class="current-list-item" href="#login" ><i class="fas fa-male" onclick="open_login();return false;"></i></a>
+										<a class="mobile-hide search-bar-icon" href=""><i class="fas fa-search"></i></a>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<!-- <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a> -->
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- end header -->
+	
+	<!-- search area -->
+	<!--<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!-- end search area -->
+
+	<!-- grey area -->
+	<div class="hero-area hero-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 offset-lg-0 text-center">
+					<div class="hero-text">
+						<div class="hero-text-tablecell">
+							<p class="subtitle">BISS OF BLISS</p>
+							<h1>Sign Up</h1>
+                            <p class="subtitle">And Be Part Of us</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end grey area -->
+
+
+	<!-- search -->
+	<div class="mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1 offset-lg text-center">
+					<div class="section-title">	
+						<h3><span class="orange-text">S</span>ign Up</h3><br>
+						<form action="" id="signup">
+                            <lable  for="Name">Full Name:   </lable> 
+                            <!-- id connect to the for field -->
+                            <input type="text" id="first_name" name="Name" minlength="6" maxlength="20"><br> <br>
+                            <lable for="">User Name: </lable>
+                            <input type="text" id="user_name" name="user_name" minlength="8" maxlength="20"><br> <br> 
+                            <lable for="">Phone number: </lable>
+                            <input type="tel" minlength="8" maxlength="20"><br> <br> 
+                            <lable for=""> Email Address: </address></lable>
+                            <input type="email"><br> <br>
+                            <lable for=""> Passward: </lable>
+                            <input type="passward" id="Pass" minlength="6" maxlength="16"><br> <br>
+                            <input type="submit" id="form1" onclick="inputValidity()"><br>
+                            <!-- <p id="errorName">Min length 6, max length 20</p> -->
+                        </form>
+					</div>
+				</div>
+			</div>
+
+	
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="footer-box">
+						<h2 class="widget-title">About us</h2>
+						<p>Here we should add summary about us and about our project.</p>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-box">
+						<h2 class="widget-title">Get in Touch</h2>
+						<ul>
+							<li>Our full address for pick up</li>
+							<li>Our support Email address</li>
+							<li>Some generic phone number</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Shop</a></li>
+							<li><a href="">Events</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-box subscribe">
+						<h2 class="widget-title">Subscribe</h2>
+						<p>Subscribe to our mailing list to get the latest updates.</p>
+						<form action="home.html">
+							<input type="email" placeholder="Email">
+							<button type="submit"><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+
+
+
+</body>
+</html>
