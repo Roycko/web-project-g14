@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="assets/js/login.js"></script>
 
 	<!-- title -->
-	<title>Matamim - About</title>
-	<script src="assets/js/login.js"></script>
+	<title>Matamim - Contact us</title>
 
 	<!-- Matamin Icon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/capcake.png">
@@ -16,12 +16,13 @@
 	<!-- special fonts and icons -->
 	<link rel="stylesheet" href="assets/css/all.min.css">
 	<!-- main style -->
-	<link rel="stylesheet" href="assets/css/About.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- contact us style -->
+	<link rel="stylesheet" href="assets/css/contactUs.css">
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
-
 <div class="popup">
 	<div class="popup-content">
 		<a class="close" onclick="close_login();return false;"><i class="fas fa-window-close"  ></i></a>
@@ -52,12 +53,12 @@
 					<ul>
 						<li><a href="home.html"><i class="fas fa-home"></i></a>
 						</li>
-						<li class="current-list-item"><a href="About.html">Our Story</a></li>
+						<li><a href="About.html">Our Story</a></li>
 						<li><a href="Events.html">Events</a>
 						</li>
 						<li><a href="Menu.html">Menu</a>
 						</li>
-						<li><a href="contact_us.html">Contact</a></li>
+						<li class="current-list-item"><a href="contact_us.html">Contact</a></li>
 						<li>
 							<div class="header-icons">
 								<a class="" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
@@ -82,8 +83,7 @@
 				<div class="col-lg-2 offset-lg-0 text-center">
 					<div class="grey-text">
 						<div class="grey-text-tablecell">
-							<p class="subtitle">BISS OF BLISS</p>
-							<h1>Our Beautiful Story</h1>
+							<h1 class="contactUsTitle">Contact Us</h1>
 						</div>
 					</div>
 				</div>
@@ -92,29 +92,43 @@
 	</div>
 	<!-- end grey area -->
 
-
-	<!-- Story section -->
+	<!-- Contact us form section -->
 	<div class="mt-150 mb-150">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-1 offset-lg text-center">
-					<div class="section-title">	
-						<h3><span class="orange-text">M</span>atamim</h3>
-						<p>Our bakery has been around for over 30 years, and since then it has been 
-                        combining excellent raw materials with dedicated and talented people!<p><br>
-                        <p>Matamim bakery was established in Be'er Sheva by Avi Taami. 
-                        From a satisfied customer to another, the company has grown, 
-                        expanded and even established 2 more branches in Be'er Sheva.</p><br>                   
-                        <p>We will be happy to give you service both in our bakeries, at a variety of events and through the website!</p><br>
-                    </div>
-                    <div class="about-main-image">
-                        <img src="assets/img/About/About pic.jpg" alt="Avi Taami photo with Cake">
+					<div class="formContainer">
+						<div class="reachingOut">Thank you for reaching out!</div>
+						<p>Want to tell us something? We would love to hear from you :)</p>
+						<form class="myFormClass"  action="action_page.php">
+									<div class="formRow">
+										<label class="firstElement" for="fname">First Name</label>
+										<input class="secondElement" type="text" id="fname" name="firstname" placeholder="Your name..">
+									</div>
+									<div class="formRow">
+										<label class="firstElement" for="lname">Last Name</label>
+										<input class="secondElement" type="text" id="lname" name="lastname" placeholder="Last name">
+									</div>
+									<div class="formRow">
+										<label class="firstElement" for="email">Email address</label>
+										<input class="secondElement" type="text" id="email" name="email" placeholder="Email Address">
+									</div>
+									<div class="formRow">
+										<label class="firstElement" for="subject">Message</label>
+										<textarea class="secondElement" id="subject" name="subject" placeholder="Write something.." ></textarea>
+									</div>
+									<input style="margin-top: 28px;" type="submit" value="Submit">
+								</form>
+						<div class="branches">
+							<a href="https://www.google.co.il/maps/@31.2525702,34.8035112,13.92z"><img src="assets/img/ContactUs/branches.png" alt="Avi Taami photo with branches"></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- end Story section -->
+
 
 <!-- footer -->
 <div class="footer-area">
@@ -162,7 +176,6 @@
 	</div>
 </div>
 <!-- end footer -->
-
 
 
 </body>

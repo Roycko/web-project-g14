@@ -1203,10 +1203,138 @@ body {
     width: 100px;
   }
 
-  /* .checkbox input:checked ~ .checkmark {
-    background-color: #F28123;
-  } */
+/* -----------------------------------------------------------------------------
 
+# Shop Page Styles
+
+----------------------------------------------------------------------------- */
+.product-cart-container{
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+.product-cart-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  transition: 0.3s;
+  max-height: 8rem;
+  box-shadow: 0 0 20px #e4e4e4;
+}
+
+.product-cart-card:hover {
+  box-shadow: none;
+}
+
+.product-cart-image {
+  flex: 0 0 40% ;
+  max-width: 40%;
+}
+
+.product-cart-image img {
+  max-width: 10rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.product-cart-image img:hover {
+  box-shadow: none;
+}
+
+.product-cart-description {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.product-cart-description h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.product-cart-description p {
+  font-family: cursive;
+  font-size: 25px;
+  margin: 0;
+}
+
+.product-cart-description span {
+  font-family: cursive;
+  font-size: 15px;
+}
+.product-cart-change{
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-cart-quantity{
+  margin: auto
+}
+
+.product-cart-quantity .input-text.qty {
+  width: 35px;
+  height: 39px;
+  padding: 0 5px;
+  text-align: center;
+  border: 1px solid #efefef;
+}
+
+.product-cart-quantity.buttons_added {
+  text-align: center;
+  position: relative;
+  margin-top: 15%;
+  vertical-align: top;
+}
+
+.product-cart-quantity.buttons_added input {
+  display: inline-block;
+  margin: 0;
+  width: 8px;
+}
+
+.product-cart-quantity.buttons_added .minus,
+.product-cart-quantity.buttons_added .plus {
+  padding: 9px 11px 12px;
+  height: 41px;
+  cursor:pointer;
+}
+
+.product-cart-quantity.buttons_added .minus:hover,
+.product-cart-quantity.buttons_added .plus:hover {
+  background: #F28123;
+}
+
+.product-cart-quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+.transparent{
+  background-color: transparent;
+  border-color: transparent;
+  margin-left: 75%;
+  margin-bottom: 10%;
+}
+.transparent i{
+  color: grey;
+}
+
+.transparent i:hover{
+  color: #F28123;
+}
+
+input[type="number"] {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  margin-bottom: 15px;
+}
 
      /* -----------------------------------------------------------------------------
   

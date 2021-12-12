@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<script src="assets/js/login.js"></script>
 	<!-- title -->
-	<title>Matamim</title>
+	<title>Matamim - Home</title>
 
 	<!-- Matamin Icon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/capcake.png">
@@ -20,6 +20,16 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
+<div class="popup">
+	<div class="popup-content">
+		<a class="close" onclick="close_login();return false;"><i class="fas fa-window-close"  ></i></a>
+		<h3>Login</h3>
+		<input type="text" placeholder="User Name">
+		<input type="text" placeholder="Password">
+		<a href="#" class="login" >Login</a>
+		<p>Need an account? <a href="signup.html" class="href"> sign-up here</a> <p>
+	</div>
+</div>
 <body>
 	
 	<!--PreLoader-->
@@ -48,65 +58,41 @@
 							<ul>
 								<li class="current-list-item"><a href="home.html"><i class="fas fa-home"></i></a>
 								</li>
-								<li><a href="">Our Story</a></li>
-								<li><a href="#">Events</a>
-									<ul class="sub-menu">
-										<li><a href="">Catering</a></li>
-										<li><a href="">Private Events</a></li>
-										<li><a href="">Business Events</a></li>
-										<li><a href="">Parties</a></li>
-									</ul>
+								<li><a href="About.html">Our Story</a></li>
+								<li><a href="Events.html">Events</a>
 								</li>
-								<li><a href="">Shop</a>
+								<li><a href="Menu.html">Menu</a>
 								</li>
-								<li><a href="">Contact</a></li>
+								<li><a href="contact_us.html">Contact</a></li>
 								<li>
 									<div class="header-icons">
-										<a class="" href=""><i class="fas fa-shopping-cart"></i></a>
-										<a class="mobile-hide search-bar-icon" href=""><i class="fas fa-search"></i></a>
+										<a class="" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<!-- need to put in the mobile as well!!!!  -->
+
 									</div>
 								</li>
 							</ul>
 						</nav>
-						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
-						<!-- menu end -->
+					 <a class="mobile-show search-bar-icon" onclick="open_login();return false;"><i class="fas fa-male" ></i></a>
+					<div class="mobile-menu"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- end header -->
-	
-	<!-- search area -->
-	<!--<div class="search-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<span class="close-btn"><i class="fas fa-window-close"></i></span>
-					<div class="search-bar">
-						<div class="search-bar-tablecell">
-							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
-							<button type="submit">Search <i class="fas fa-search"></i></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
-	<!-- end search area -->
 
 	<!-- grey area -->
-	<div class="hero-area hero-bg">
+	<div class="grey-area grey-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 offset-lg-0 text-center">
-					<div class="hero-text">
-						<div class="hero-text-tablecell">
+					<div class="grey-text">
+						<div class="grey-text-tablecell">
 							<p class="subtitle">BISS OF BLISS</p>
 							<h1>Straight From The Oven</h1>
-							<div class="hero-btns">
-								<a href="" class="boxed-btn">Pastry Collection</a>
-								<a href="" class="bordered-btn">Contact Us</a>
+							<div class="grey-btns">
+								<a href="Menu.html" class="boxed-btn">Pastry Collection</a>
+								<a href="contact_us.html" class="bordered-btn">Contact Us</a>
 							</div>
 						</div>
 					</div>
@@ -236,9 +222,9 @@
 					<div class="footer-box">
 						<h2 class="widget-title">Get in Touch</h2>
 						<ul>
-							<li>Our full address for pick up</li>
-							<li>Our support Email address</li>
-							<li>Some generic phone number</li>
+							<li>Avraham Avinu 31/75, Be'er Sheva</li>
+							<li>Support@Matamim.com</li>
+							<li>Tel: +972-54223471</li>
 						</ul>
 					</div>
 				</div>
@@ -246,11 +232,11 @@
 					<div class="footer-box pages">
 						<h2 class="widget-title">Pages</h2>
 						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">About</a></li>
-							<li><a href="">Shop</a></li>
-							<li><a href="">Events</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="About.html">About</a></li>
+							<li><a href="Menu.html">Menu</a></li>
+							<li><a href="Events.html">Events</a></li>
+							<li><a href="contact_us.html">Contact</a></li>
 						</ul>
 					</div>
 				</div>

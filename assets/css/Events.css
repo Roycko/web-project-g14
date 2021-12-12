@@ -54,6 +54,7 @@ body {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   @media (min-width: 992px) {
     .col-lg-1 {
       -ms-flex: 0 0 66.666667%;
@@ -893,26 +894,26 @@ body {
   
   /* -----------------------------------------------------------------------------
   
-  # grey Styles
+  # Hero Styles
   
   ----------------------------------------------------------------------------- */
-  .grey-bg {
-    background-image: url(../img/grey-bg.jpg);
+  .hero-bg {
+    background-image: url(../img/hero-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
   
-  .grey-text {
+  .hero-text {
     display: table;
     height: 100%;
   }
   
-  .grey-text-tablecell {
+  .hero-text-tablecell {
     display: table-cell;
   }
   
-  .grey-area {
+  .hero-area {
     height: 70%;
     position: relative;
     z-index: 1;
@@ -923,7 +924,7 @@ body {
     background-color: whitesmoke;
   }
   
-  .grey-area:after {
+  .hero-area:after {
     position: absolute;
     left: 0;
     top: 0;
@@ -935,7 +936,7 @@ body {
     opacity: 0.6;
   }
   
-  .grey-text p.subtitle {
+  .hero-text p.subtitle {
     color: #F28123;
     font-weight: 700;
     text-transform: uppercase;
@@ -943,41 +944,41 @@ body {
     font-size: 15px;
   }
   
-  .grey-text h1 {
+  .hero-text h1 {
     font-size: 64px;
     font-weight: 700;
     line-height: 1.3;
     color: #fff;
   }
   
-  .grey-area div {
+  .hero-area div {
     height: 100%;
   }
   
-  .grey-area div.grey-text {
+  .hero-area div.hero-text {
     height: 100%;
     width: 100%;
   }
   
-  .grey-area div.grey-text-tablecell {
+  .hero-area div.hero-text-tablecell {
     height: auto;
     vertical-align: middle;
   }
   
-  .grey-area div.grey-text-tablecell div {
+  .hero-area div.hero-text-tablecell div {
     height: auto;
     vertical-align: middle;
   }
   
-  .grey-btns {
+  .hero-btns {
     margin-top: 50px;
   }
   
-  .grey-btns a.bordered-btn {
+  .hero-btns a.bordered-btn {
     margin-left: 15px;
   }
   
-  .grey-area div.grey-form {
+  .hero-area div.hero-form {
     background-color: #fff;
     text-align: center;
     width: 380px;
