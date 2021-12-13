@@ -70,6 +70,14 @@ input[type=submit]:hover {
 .branches{
     margin-top: 100px;
 }
+
+a.mobile-show.person-bar-icon {
+    transition: 0.3s;
+}
+
+a.mobile-show.person-bar-icon:hover {
+    color: #F28123;
+}
 /* -----------------------------------------------------------------------------
 
 # Login popup

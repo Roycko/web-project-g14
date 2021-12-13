@@ -736,38 +736,12 @@ a.cart-btn:hover {
   background-color: #051922;
   color: #F28123;
 }
-ul.sub-menu li a {
+
+a.mobile-show.person-bar-icon {
   transition: 0.3s;
 }
 
-ul.sub-menu li:hover a {
-  color: #F28123 !important;
-}
-
-
-
-.search-bar-tablecell button[type=submit] {
-  transition: 0.3s;
-}
-
-.search-bar-tablecell button[type=submit]:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-span.close-btn {
-  transition: 0.3s;
-}
-
-span.close-btn:hover {
-  color: #fff;
-}
-
-a.mobile-show.search-bar-icon {
-  transition: 0.3s;
-}
-
-a.mobile-show.search-bar-icon:hover {
+a.mobile-show.person-bar-icon:hover {
   color: #F28123;
 }
 
@@ -776,12 +750,6 @@ a.mobile-show.search-bar-icon:hover {
 # grey Styles
 
 ----------------------------------------------------------------------------- */
-.grey-bg {
-  background-image: url(../img/Hero-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 
 .grey-text {
   display: table;
@@ -882,64 +850,8 @@ input[type="submit"] {
   padding: 15px 25px;
   border-radius: 3px;
 }
-
-
-
-/* -----------------------------------------------------------------------------
-
-# Events Styles
-
------------------------------------------------------------------------------ */
-.event-bg-1 {
-  background-image: url(../img/Events/Chocolate1.jpg);
-  background-position: center;
-}
-
-.event-bg-2 {
-  background-image: url(../img/Events/Event1.jpg);
-}
-
-.event-bg-3 {
-  background-image: url(../img/Events/Waffle.jpg);
-}
-
-.event-bg {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  background-color: #ddd;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.eventCard h3 {
-  font-size: 20px;
-  line-height: 1.25em;
-  font-weight: 600;
-}
-
-.eventCard h3 a {
-  color: #051922;
-}
-
-p.excerpt {
-  line-height: 1.8;
-  color: #555;
-}
-
 a.boxed-btn {
   margin-top: 20px;
-}
-
-.event-text-box {
-  padding: 25px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.eventCard {
-  margin-bottom: 30px;
 }
 
 /* -----------------------------------------------------------------------------
