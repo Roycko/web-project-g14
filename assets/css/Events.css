@@ -98,14 +98,8 @@ body {
   }
   
   a {
-    cursor: pointer;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-  }
-  
-  a:hover {
-    color: #F28123;
-    text-decoration: none;
   }
   
   h1, .h1,
