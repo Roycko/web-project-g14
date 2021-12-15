@@ -251,14 +251,6 @@ p {
   animation: none;
 }
 
-@-webkit-keyframes spinLeft {     /* -----------*/
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(720deg);
-  }
-}
 
 @keyframes spinLeft {         /* -----------*/
   from {
@@ -269,14 +261,6 @@ p {
   }
 }
 
-@-webkit-keyframes spinRight {      /* -----------*/
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
 
 @keyframes spinRight {      /* -----------*/
   from {
@@ -961,8 +945,7 @@ a.boxed-btn {
 }
 
 .product-cart-quantity input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
 }
 .transparent{

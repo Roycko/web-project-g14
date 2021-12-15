@@ -251,15 +251,6 @@ p {
   animation: none;
 }
 
-@-webkit-keyframes spinLeft {     /* -----------*/
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(720deg);
-  }
-}
-
 @keyframes spinLeft {         /* -----------*/
   from {
     transform: rotate(0deg);
@@ -269,14 +260,6 @@ p {
   }
 }
 
-@-webkit-keyframes spinRight {      /* -----------*/
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
 
 @keyframes spinRight {      /* -----------*/
   from {
