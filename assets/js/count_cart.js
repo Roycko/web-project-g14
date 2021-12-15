@@ -53,6 +53,7 @@ function m2(){
 function m3(){
     if (document.getElementById("n3").value > 0)
         document.getElementById("n3").value --;
+    tPrice();
 }
 function m4(){
     if (document.getElementById("n4").value > 0)
