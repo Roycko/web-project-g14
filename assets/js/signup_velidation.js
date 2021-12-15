@@ -12,7 +12,7 @@ function inputValidity() {
         document.getElementById("errorName").innerHTML = 'User Name: '+inpObj.validationMessage;
              return false;
         }
-        if (!inpObj2.checkValidity() |עגל| inpObj2=="") {
+        if (!inpObj2.checkValidity() || inpObj2=="") {
             document.getElementById("errorPass").innerHTML ='Passward: ' +inpObj2.validationMessage;
             return false;
             } 
