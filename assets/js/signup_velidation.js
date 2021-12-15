@@ -1,13 +1,26 @@
 function inputValidity() {
     console.log('start');
-        const inpObj = document.getElementById("first_name");
-        const inpObj2 = document.getElementById("Pass");
-        if (!inpObj.checkValidity()) {
-        document.getElementById("errorName").innerHTML = inpObj.validationMessage;
-        } 
-        if (!inpObj2.checkValidity()) {
-            document.getElementById("errorPass").innerHTML = inpObj.validationMessage;
+        var inpObj = document.getElementById("user_name");
+        var inpObj2 = document.getElementById("Pass");
+        var inpObjV = document.getElementById("user_name").value;
+        var inpObj2V = document.getElementById("Pass").value;
+        if( !inpObjV||  !inpObj2V){
+            document.getElementById("mandatory").innerHTML = 'fill ALL the Mandatory field';
+            return false;
+        }
+        if (!inpObj.checkValidity() || inpObj=="") {
+        document.getElementById("errorName").innerHTML = 'User Name: '+inpObj.validationMessage;
+             return false;
+        }
+        if (!inpObj2.checkValidity() |עגל| inpObj2=="") {
+            document.getElementById("errorPass").innerHTML ='Passward: ' +inpObj2.validationMessage;
+            return false;
             } 
-        if(inpObj2.checkValidity()& inpObj.checkValidity())
-        document.getElementById("errorPass").innerHTML = "Input OK";
+        if(inpObj2.checkValidity()& inpObj.checkValidity() & inpObjV& inpObj2V )
+        {
+            if(input)
+            document.getElementById("errorPass").innerHTML = "Input OK";
+            return true;
+        }
+        
     } 

@@ -111,73 +111,26 @@
 				<div class="col-lg-1 offset-lg text-center">
 					<div class="section-title">	
 						<h3><span class="orange-text">S</span>ign Up</h3><br>
-						<form action="" id="signup">
-                            <lable  for="Name">Full Name:   </lable> 
+						<form method="post" action="home.html" id="signup" onSubmit="return inputValidity()">
+                            <lable  for="first_name">Full Name:   </lable> 
                             <!-- id connect to the for field -->
                             <input type="text" id="first_name" name="Name" minlength="6" maxlength="20"><br> <br>
-                            <lable for="">User Name: </lable>
-                            <input type="text" id="user_name" name="user_name" minlength="8" maxlength="20"><br> <br> 
-                            <lable for="">Phone number: </lable>
-                            <input type="tel" minlength="8" maxlength="20"><br> <br> 
-                            <lable for=""> Email Address: </address></lable>
-                            <input type="email"><br> <br>
-                            <lable for=""> Passward: </lable>
-                            <input type="passward" id="Pass" minlength="6" maxlength="16"><br> <br>
-                            <input type="submit" id="form1" onclick="inputValidity()"><br>
-                            <!-- <p id="errorName">Min length 6, max length 20</p> -->
+                            <lable for="user_name">User Name: </lable>
+                            <input type="text" id="user_name" name="user_name" minlength="8" maxlength="20" placeholder="Mandatory Field"><br> <br> 
+                            <lable for="phone">Phone number: </lable>
+                            <input type="tel" id='phone' name='phon_number' minlength="8" maxlength="20"><br> <br> 
+                            <lable for="email"> Email Address: </address></lable>
+                            <input type="email" id='email' name='mail'><br> <br>
+                            <lable for="Pass"> Passward: </lable>
+                            <input type="passward" id="Pass" name='pass' minlength="6" maxlength="16" placeholder="Mandatory Field"><br> <br>
+                            <input type="submit" id="form1"  onclick="return inputValidity()"><br>
+                            <p id="errorName"></p>
+							<p id="errorPass"></p>
+							<p id="mandatory"></p>
                         </form>
 					</div>
 				</div>
 			</div>
-
-
-			<!-- footer -->
-			<div class="footer-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3">
-							<div class="footer-box">
-								<h2 class="widget-title">About us</h2>
-								<p>The best bakery in the Middle East! Here you will find the most delicious things you have ever eaten :)</p>
-							</div>
-						</div>
-						<div class="col-lg-3">
-							<div class="footer-box">
-								<h2 class="widget-title">Get in Touch</h2>
-								<ul>
-									<li>Avraham Avinu 31/75, Be'er Sheva</li>
-									<li>Support@Matamim.com</li>
-									<li>Tel: +972-54223471</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-3">
-							<div class="footer-box pages">
-								<h2 class="widget-title">Pages</h2>
-								<ul>
-									<li><a href="home.html">Home</a></li>
-									<li><a href="About.html">About</a></li>
-									<li><a href="Menu.html">Menu</a></li>
-									<li><a href="Events.html">Events</a></li>
-									<li><a href="contact_us.html">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-3">
-							<div class="footer-box subscribe">
-								<h2 class="widget-title">Subscribe</h2>
-								<p>Subscribe to our mailing list to get the latest updates.</p>
-								<form action="home.html">
-									<input type="email" placeholder="Email">
-									<button type="submit"><i class="fas fa-paper-plane"></i></button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end footer -->
-
 
 
 </body>
