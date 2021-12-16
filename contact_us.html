@@ -110,19 +110,19 @@
 						<form class="myFormClass"  action="action_page.php">
 									<div class="formRow">
 										<label class="firstElement" for="fname">First Name</label>
-										<input required class="secondElement" type="text" id="fname" name="firstname" placeholder="Your name..">
+										<input required class="secondElement" type="text" id="fname" name="firstname" placeholder="Your name.." pattern="[A-Za-z]{1,32}">
 									</div>
 									<div class="formRow">
 										<label class="firstElement" for="lname">Last Name</label>
-										<input required class="secondElement" type="text" id="lname" name="lastname" placeholder="Last name">
+										<input required class="secondElement" type="text" id="lname" name="lastname" placeholder="Last name" pattern="[A-Za-z]{1,32}">
 									</div>
 									<div class="formRow">
 										<label class="firstElement" for="email">Email address</label>
-										<input required class="secondElement" type="text" id="email" name="email" placeholder="Email Address">
+										<input required class="secondElement" type="email" id="email" name="email" placeholder="Email Address">
 									</div>
 									<div class="formRow">
 										<label class="firstElement" for="subject">Message</label>
-										<textarea class="secondElement" id="subject" name="subject" placeholder="Write something.." ></textarea>
+										<textarea required class="secondElement" id="subject" name="subject" placeholder="Write something.." ></textarea>
 									</div>
 									<input style="margin-top: 28px;" type="submit" value="Submit">
 								</form>
